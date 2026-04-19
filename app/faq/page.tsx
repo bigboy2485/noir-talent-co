@@ -172,6 +172,12 @@ export default function FAQPage() {
               >
                 DM on Instagram
               </a>
+              <a
+                href="mailto:NoirTalentCo@proton.me"
+                className="w-full sm:w-auto px-6 py-3 border border-white/10 text-[#A1A1A1] text-sm tracking-widest uppercase hover:border-white hover:text-white transition-all duration-300"
+              >
+                Email Us
+              </a>
             </div>
           </div>
         </div>

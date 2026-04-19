@@ -243,16 +243,26 @@ export default function ApplyPage() {
 
           {!submitted && (
             <div className="mt-12 pt-12 border-t border-white/5 text-center">
-              <p className="text-[#A1A1A1] text-sm mb-4">Prefer to reach out directly?</p>
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-[#C6A15B] text-sm tracking-widest uppercase group"
-              >
-                DM Us on Instagram
-                <span className="block w-8 h-px bg-[#C6A15B] group-hover:w-12 transition-all duration-300" />
-              </a>
+              <p className="text-[#A1A1A1] text-sm mb-6">Prefer to reach out directly?</p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 text-[#C6A15B] text-sm tracking-widest uppercase group"
+                >
+                  DM on Instagram
+                  <span className="block w-8 h-px bg-[#C6A15B] group-hover:w-12 transition-all duration-300" />
+                </a>
+                <a
+                  href="mailto:NoirTalentCo@proton.me"
+                  className="inline-flex items-center gap-3 text-[#C6A15B] text-sm tracking-widest uppercase group"
+                >
+                  Email Us
+                  <span className="block w-8 h-px bg-[#C6A15B] group-hover:w-12 transition-all duration-300" />
+                </a>
+              </div>
+              <p className="mt-4 text-[#A1A1A1]/60 text-xs">NoirTalentCo@proton.me</p>
             </div>
           )}
         </div>
