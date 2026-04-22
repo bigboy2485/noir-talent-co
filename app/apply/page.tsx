@@ -88,7 +88,7 @@ export default function ApplyPage() {
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
               <div className="flex flex-col gap-2">
                 <label className="text-[#A1A1A1] text-xs tracking-[0.2em] uppercase">
-                  Full Name <span className="text-[#C6A15B]">*</span>
+                  Full name <span className="text-[#C6A15B]">*</span>
                 </label>
                 <input
                   type="text"
@@ -103,7 +103,7 @@ export default function ApplyPage() {
 
               <div className="flex flex-col gap-2">
                 <label className="text-[#A1A1A1] text-xs tracking-[0.2em] uppercase">
-                  Email Address <span className="text-[#C6A15B]">*</span>
+                  Email address <span className="text-[#C6A15B]">*</span>
                 </label>
                 <input
                   type="email"
@@ -118,7 +118,7 @@ export default function ApplyPage() {
 
               <div className="flex flex-col gap-2">
                 <label className="text-[#A1A1A1] text-xs tracking-[0.2em] uppercase">
-                  Instagram Handle <span className="text-[#C6A15B]">*</span>
+                  Instagram handle <span className="text-[#C6A15B]">*</span>
                 </label>
                 <input
                   type="text"
@@ -133,7 +133,7 @@ export default function ApplyPage() {
 
               <div className="flex flex-col gap-2">
                 <label className="text-[#A1A1A1] text-xs tracking-[0.2em] uppercase">
-                  Creator Status <span className="text-[#C6A15B]">*</span>
+                  Creator status <span className="text-[#C6A15B]">*</span>
                 </label>
                 <select
                   name="status"
@@ -154,7 +154,7 @@ export default function ApplyPage() {
 
               <div className="flex flex-col gap-2">
                 <label className="text-[#A1A1A1] text-xs tracking-[0.2em] uppercase">
-                  Current Monthly Revenue (approximate)
+                  Current monthly revenue (approximate)
                 </label>
                 <select
                   name="revenue"
@@ -176,7 +176,7 @@ export default function ApplyPage() {
 
               <div className="flex flex-col gap-2">
                 <label className="text-[#A1A1A1] text-xs tracking-[0.2em] uppercase">
-                  What Are Your Goals? <span className="text-[#C6A15B]">*</span>
+                  What are your goals? <span className="text-[#C6A15B]">*</span>
                 </label>
                 <textarea
                   name="goals"
@@ -191,7 +191,7 @@ export default function ApplyPage() {
 
               <div className="flex flex-col gap-2">
                 <label className="text-[#A1A1A1] text-xs tracking-[0.2em] uppercase">
-                  What Is Your Biggest Challenge Right Now?{' '}
+                  What is your biggest challenge right now?{' '}
                   <span className="text-[#C6A15B]">*</span>
                 </label>
                 <textarea
@@ -207,7 +207,7 @@ export default function ApplyPage() {
 
               <div className="flex flex-col gap-2">
                 <label className="text-[#A1A1A1] text-xs tracking-[0.2em] uppercase">
-                  Anything Else You Would Like Us to Know?
+                  Anything else you would like us to know?
                 </label>
                 <textarea
                   name="message"

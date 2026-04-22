@@ -7,23 +7,40 @@ import { INSTAGRAM_URL, CONTACT_EMAIL, CONTACT_EMAIL_HREF } from '@/lib/constant
 
 const faqs = [
   {
+    category: 'Pricing & Structure',
+    questions: [
+      {
+        q: 'How much do I pay upfront?',
+        a: "Nothing. We do not charge upfront fees, retainers, or setup costs. We operate on a pure revenue-share model, which means we only earn when you earn. If you do not make money, neither do we.",
+      },
+      {
+        q: 'How does the revenue share work?',
+        a: "Our share is a percentage of your net OnlyFans earnings — calculated after the platform\u2019s own 20% fee is deducted. The exact rate depends on your tier and is locked in your contract, so there are never surprise changes. Founding cohort creators receive a reduced rate, held for the duration of the partnership.",
+      },
+      {
+        q: 'Are there any hidden fees?',
+        a: "No. Every payout statement shows your gross earnings, the OnlyFans fee, our share, and your net take-home. If you ever see a line you do not understand, we will walk you through it until it makes sense.",
+      },
+    ],
+  },
+  {
     category: 'Eligibility',
     questions: [
       {
-        q: 'Who is this for?',
-        a: "Noir Talent Co. works with female creators who are serious about growing their career on OnlyFans. Whether you are just starting out or already earning and want to scale — if you are committed, coachable, and ready to treat your career like a business, we want to hear from you.",
+        q: "I'm new to OnlyFans. Would you still work with me?",
+        a: "Yes, in the right cases. We work with both new creators who have not launched yet and established creators looking to scale. What matters more than your current numbers is your commitment, your content output, and whether we can see a clear path to growth for you. If you are ready to treat this as a business, we want to talk.",
       },
       {
-        q: 'Do I need experience to apply?',
-        a: "No. We work with both aspiring creators who haven't launched yet and experienced creators who are looking to scale. What matters more than your current level is your mindset, your commitment, and your goals.",
+        q: 'Who is this for?',
+        a: "Creators who are serious about growing their career on OnlyFans. Whether you are just starting or already earning and want to scale, if you are committed, coachable, and ready to follow through on a strategy, we want to hear from you.",
       },
       {
         q: 'Do you accept everyone who applies?',
-        a: "No. We are selective and work with a limited number of creators at any given time. Every application is reviewed personally and we only move forward where we see genuine potential and a strong fit. If we don't think we can deliver value for you, we will be honest about that.",
+        a: "No. We are selective and work with a limited number of creators at a time. Every application is reviewed personally and we only move forward where we see a strong fit and genuine potential. If we do not think we can deliver value, we will tell you honestly.",
       },
       {
         q: 'What kind of creators do you work best with?',
-        a: "Creators who are serious, consistent, and ready to follow through on a strategy. We work best with people who are coachable and open to direction — not those who want validation for doing things the same way they always have.",
+        a: "Creators who are serious, consistent, and ready to follow through on a plan. We work best with people who are coachable and open to direction — not those looking for validation for doing things the way they already do them.",
       },
     ],
   },
@@ -31,12 +48,12 @@ const faqs = [
     category: 'Privacy & Discretion',
     questions: [
       {
-        q: 'Is everything confidential?',
-        a: 'Completely. We operate with full discretion at every stage. Your identity, income figures, content, and our working relationship remain private. We do not share client information with third parties, we do not disclose who we work with, and we do not use your details for marketing without explicit permission.',
+        q: 'Is the protection of my privacy and confidentiality assured?',
+        a: "Completely. Discretion is the foundation of how we work. Your identity, income figures, content, and the existence of our partnership remain private. We do not share client information with third parties. We do not disclose who we work with. We do not use your details for marketing without explicit written permission. A signed confidentiality agreement is in place before any account access is shared.",
       },
       {
         q: 'How do you handle sensitive information?',
-        a: 'All information shared with us — via application, calls, or ongoing partnership — is treated as strictly confidential. We have clear agreements in place to protect both parties.',
+        a: "Every piece of information shared with us — whether through your application, calls, or the day-to-day partnership — is treated as strictly confidential. Account credentials are held in an enterprise password manager, never passed through chat or email. Two-factor authentication is enforced on every account. Chat and document access is limited to the people who strictly need it.",
       },
     ],
   },
@@ -45,19 +62,19 @@ const faqs = [
     questions: [
       {
         q: 'How do I apply?',
-        a: 'Fill out the application form on our Apply page. It takes around 5–10 minutes. Tell us about where you are now, your goals, and what has been holding you back. We will review it personally and be in touch within 48–72 hours.',
+        a: "Fill out the application form on our Apply page. It takes around 5 to 10 minutes. Tell us where you are, what your goals are, and what has been holding you back. We review it personally and will be in touch within 48–72 hours.",
       },
       {
         q: 'What happens after I apply?',
-        a: "If we see a potential fit, we'll invite you to a private assessment call. This is a no-pressure conversation — we want to understand your situation in full before making any decisions. If we move forward, we begin building your strategy.",
+        a: "If we see a potential fit, we invite you to a private assessment call. This is a no-pressure conversation — we want to understand your situation before anyone commits. If we move forward, we begin building your strategy.",
       },
       {
         q: 'How quickly can I get started?',
-        a: "Once your application is submitted, we aim to respond within 48–72 hours. If we move to an assessment call and decide to partner, we can typically begin within 1–2 weeks.",
+        a: "Once your application is reviewed, we aim to respond within 48–72 hours. If we move to an assessment call and decide to partner, we can typically begin within one to two weeks.",
       },
       {
         q: 'What does the onboarding process look like?',
-        a: 'After your assessment call, we conduct a full audit of your profile, analytics, content, and monetisation. From there we build your custom strategy. The entire onboarding phase typically takes 1–2 weeks before active management begins.',
+        a: "After your assessment call, we conduct a full audit of your profile, analytics, content, and monetisation. From there, we build your custom 90-day roadmap. The entire onboarding phase typically takes one to two weeks before active management begins.",
       },
     ],
   },
@@ -65,16 +82,20 @@ const faqs = [
     category: 'The Partnership',
     questions: [
       {
-        q: 'What does working with Noir actually look like day-to-day?',
-        a: "You continue creating. We handle strategy, systems, and ongoing optimisation. Depending on your tier, this includes regular check-in calls, performance reviews, content direction, monetisation management, and more. You are supported — not micromanaged.",
+        q: "What does working with Noir actually look like day-to-day?",
+        a: "You continue creating. We handle strategy, messaging operations, posting cadence, and ongoing optimisation. Depending on your tier, this includes regular check-in calls, performance reviews, content direction, and monetisation management. You are supported, not micromanaged.",
       },
       {
-        q: 'Do I have to change everything I am doing?',
-        a: "Not necessarily. We audit what is working and what is not. Some creators need significant changes; others need refinement and optimisation. We build around your strengths, not against them.",
+        q: 'How often will I communicate with my account manager?',
+        a: "During onboarding, we speak several times a week while we build your systems and roadmap. Once active management begins, your dedicated strategist will hold a weekly check-in with you every Monday and a full strategic review on the last Friday of each month. Outside of scheduled calls, your strategist is reachable through your private channel for anything time-sensitive.",
+      },
+      {
+        q: "Do I have to change everything I'm doing?",
+        a: "Not necessarily. We audit what is working and what is not. Some creators need significant changes; others need refinement. We build around your strengths, not against them.",
       },
       {
         q: 'How long are the partnerships?',
-        a: "We work on a rolling basis. There are no rigid long-term contracts — but growth takes time and we ask for a minimum commitment to see results. Most of our creators stay for 6–12+ months because the relationship delivers consistent value.",
+        a: "We work on a rolling basis with a minimum 90-day commitment — the time it takes for the systems we build to compound. Most of our creators stay for 6–12+ months because the relationship keeps delivering. There is a 30-day exit either way after month three.",
       },
     ],
   },
@@ -103,7 +124,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       </button>
       <div
         className="overflow-hidden transition-all duration-300"
-        style={{ maxHeight: open ? '400px' : '0' }}
+        style={{ maxHeight: open ? '600px' : '0' }}
       >
         <p className="text-[#A1A1A1] text-sm leading-relaxed pb-6 pr-10">{a}</p>
       </div>
@@ -126,7 +147,7 @@ export default function FAQPage() {
           </h1>
           <p className="text-[#A1A1A1] text-lg leading-relaxed max-w-2xl mx-auto">
             Everything you need to know before applying. If your question is not here,
-            reach out via the contact form or Instagram.
+            email us directly and we will answer in a business day.
           </p>
         </div>
       </section>
@@ -175,7 +196,7 @@ export default function FAQPage() {
                 href={CONTACT_EMAIL_HREF}
                 className="w-full sm:w-auto px-6 py-3 border border-white/10 text-[#A1A1A1] text-sm tracking-widest uppercase hover:border-white hover:text-white transition-all duration-300"
               >
-                Email Us
+                {CONTACT_EMAIL}
               </a>
             </div>
           </div>

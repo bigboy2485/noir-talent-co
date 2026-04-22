@@ -5,20 +5,20 @@ import Link from 'next/link'
 
 const faqs = [
   {
-    q: 'Who is this for?',
-    a: 'Creators who are serious about growing their career. Whether you are just starting out or already earning and want to scale — if you are committed and coachable, we want to hear from you.',
+    q: 'How much do I pay upfront?',
+    a: "Nothing. We do not charge upfront fees, retainers, or setup costs. We operate on a pure revenue-share model — we only earn when you earn.",
   },
   {
     q: 'Is everything confidential?',
-    a: 'Completely. We operate with full discretion. Your identity, your figures, and our work together remain private at all times.',
+    a: "Completely. Your identity, income, and the existence of our partnership remain private. A signed confidentiality agreement is in place before any account access is shared.",
   },
   {
     q: 'Do you accept everyone who applies?',
-    a: 'No. We are selective. Every application is reviewed personally and we only partner with creators where we see a strong fit and genuine potential.',
+    a: "No. We are selective. Every application is reviewed personally and we only partner with creators where we see a strong fit and genuine potential.",
   },
   {
     q: 'How quickly can I get started?',
-    a: 'Once your application is reviewed, we aim to respond within 48–72 hours. If we move forward, an assessment call is scheduled and we can begin from there.',
+    a: "Once your application is reviewed, we aim to respond within 48–72 hours. If we move forward, an assessment call is scheduled and we can begin from there.",
   },
 ]
 
@@ -58,7 +58,7 @@ export default function FAQPreview() {
               </button>
               <div
                 className="overflow-hidden transition-all duration-300"
-                style={{ maxHeight: open === i ? '200px' : '0' }}
+                style={{ maxHeight: open === i ? '300px' : '0' }}
               >
                 <p className="text-[#A1A1A1] text-sm leading-relaxed pb-6">{faq.a}</p>
               </div>

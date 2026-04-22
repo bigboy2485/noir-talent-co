@@ -36,8 +36,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-[#A1A1A1] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12 font-light">
-          Strategic management for creators who want structure, growth, and real results —
-          without the guesswork.
+          Strategic management for creators who want structure, growth, and real results.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

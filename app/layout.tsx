@@ -4,12 +4,12 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
-  title: 'Noir Talent Co — Creator Management Agency',
+  title: 'Noir Talent Co. — Creator Management Agency',
   description:
     'Private creator management agency. Strategic management for creators who want structure, growth, and real results.',
   keywords: 'creator management, OnlyFans management, creator agency, content strategy',
   openGraph: {
-    title: 'Noir Talent Co',
+    title: 'Noir Talent Co.',
     description: 'Built for creators ready to scale.',
     type: 'website',
   },

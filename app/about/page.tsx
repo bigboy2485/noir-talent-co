@@ -130,7 +130,7 @@ export default function AboutPage() {
               href="/apply"
               className="inline-block px-8 py-4 bg-[#C6A15B] text-black text-sm tracking-widest uppercase font-medium hover:bg-[#D4B47A] transition-all duration-300"
             >
-              Apply to Work With Us
+              Apply Now
             </Link>
           </div>
         </div>
