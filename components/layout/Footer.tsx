@@ -1,13 +1,12 @@
 import Link from 'next/link'
-
-const INSTAGRAM_URL = 'https://www.instagram.com/jbls_media/'
+import { INSTAGRAM_URL, CONTACT_EMAIL, CONTACT_EMAIL_HREF } from '@/lib/constants'
 
 const footerLinks = {
   company: [
     { href: '/about', label: 'About' },
+    { href: '/case-studies', label: 'Case Studies' },
     { href: '/services', label: 'Services' },
     { href: '/how-it-works', label: 'How It Works' },
-    { href: '/results', label: 'Results' },
     { href: '/faq', label: 'FAQ' },
   ],
   legal: [
@@ -52,11 +51,11 @@ export default function Footer() {
                 Instagram
               </a>
               <a
-                href="mailto:NoirTalentCo@proton.me"
+                href={CONTACT_EMAIL_HREF}
                 className="flex items-center gap-2 text-[#A1A1A1] hover:text-[#C6A15B] text-sm tracking-wide transition-colors duration-200 group w-fit"
               >
                 <span className="w-8 h-px bg-[#A1A1A1] group-hover:bg-[#C6A15B] transition-colors" />
-                NoirTalentCo@proton.me
+                {CONTACT_EMAIL}
               </a>
             </div>
           </div>

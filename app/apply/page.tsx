@@ -2,11 +2,10 @@
 
 import { useState } from 'react'
 import { useForm, ValidationError } from '@formspree/react'
-
-const INSTAGRAM_URL = 'https://www.instagram.com/jbls_media/'
+import { INSTAGRAM_URL, CONTACT_EMAIL, CONTACT_EMAIL_HREF, APPLY_FORM_ID, RESPONSE_WINDOW } from '@/lib/constants'
 
 export default function ApplyPage() {
-  const [state, handleSubmit] = useForm('xeevklny')
+  const [state, handleSubmit] = useForm(APPLY_FORM_ID)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -47,7 +46,7 @@ export default function ApplyPage() {
             creator who reaches out — because the right partnership matters.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-[#A1A1A1]">
-            {['Private & Confidential', '48–72hr Response', 'No Obligation'].map((item, i) => (
+            {['Private & Confidential', `${RESPONSE_WINDOW} Response`, 'No Obligation'].map((item, i) => (
               <span key={i} className="flex items-center gap-2">
                 <span className="text-[#C6A15B] text-xs">◈</span>
                 {item}
@@ -70,7 +69,7 @@ export default function ApplyPage() {
               </h2>
               <p className="text-[#A1A1A1] text-base leading-relaxed mb-8">
                 Thank you for applying. We have received your application and will review it
-                personally. You can expect to hear from us within 48–72 hours.
+                personally. You can expect to hear from us within {RESPONSE_WINDOW}.
               </p>
               <p className="text-[#A1A1A1] text-sm">
                 In the meantime, feel free to{' '}
@@ -255,14 +254,14 @@ export default function ApplyPage() {
                   <span className="block w-8 h-px bg-[#C6A15B] group-hover:w-12 transition-all duration-300" />
                 </a>
                 <a
-                  href="mailto:NoirTalentCo@proton.me"
+                  href={CONTACT_EMAIL_HREF}
                   className="inline-flex items-center gap-3 text-[#C6A15B] text-sm tracking-widest uppercase group"
                 >
                   Email Us
                   <span className="block w-8 h-px bg-[#C6A15B] group-hover:w-12 transition-all duration-300" />
                 </a>
               </div>
-              <p className="mt-4 text-[#A1A1A1]/60 text-xs">NoirTalentCo@proton.me</p>
+              <p className="mt-4 text-[#A1A1A1]/60 text-xs">{CONTACT_EMAIL}</p>
             </div>
           )}
         </div>

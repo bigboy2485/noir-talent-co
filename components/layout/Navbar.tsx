@@ -2,15 +2,11 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-
-const INSTAGRAM_URL = 'https://www.instagram.com/jbls_media/'
+import { INSTAGRAM_URL } from '@/lib/constants'
 
 const navLinks = [
   { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
-  { href: '/how-it-works', label: 'How It Works' },
-  { href: '/results', label: 'Results' },
-  { href: '/faq', label: 'FAQ' },
+  { href: '/case-studies', label: 'Case Studies' },
 ]
 
 export default function Navbar() {

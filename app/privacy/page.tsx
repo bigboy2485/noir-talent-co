@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { CONTACT_EMAIL } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy — Noir Talent Co.',
@@ -70,8 +71,7 @@ export default function PrivacyPage() {
             },
             {
               title: '9. Contact',
-              content:
-                'If you have any questions about this Privacy Policy or how we handle your data, please contact us through the Apply page or via Instagram.',
+              content: `If you have any questions about this Privacy Policy or how we handle your data, please email us at ${CONTACT_EMAIL} or reach out through the Apply page.`,
             },
           ].map((section, i) => (
             <div key={i}>

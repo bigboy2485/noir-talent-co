@@ -1,6 +1,5 @@
 import Link from 'next/link'
-
-const INSTAGRAM_URL = 'https://www.instagram.com/jbls_media/'
+import { INSTAGRAM_URL } from '@/lib/constants'
 
 export default function FinalCTA() {
   return (

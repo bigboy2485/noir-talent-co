@@ -3,8 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import FinalCTA from '@/components/sections/FinalCTA'
-
-const INSTAGRAM_URL = 'https://www.instagram.com/jbls_media/'
+import { INSTAGRAM_URL, CONTACT_EMAIL, CONTACT_EMAIL_HREF } from '@/lib/constants'
 
 const faqs = [
   {
@@ -173,7 +172,7 @@ export default function FAQPage() {
                 DM on Instagram
               </a>
               <a
-                href="mailto:NoirTalentCo@proton.me"
+                href={CONTACT_EMAIL_HREF}
                 className="w-full sm:w-auto px-6 py-3 border border-white/10 text-[#A1A1A1] text-sm tracking-widest uppercase hover:border-white hover:text-white transition-all duration-300"
               >
                 Email Us

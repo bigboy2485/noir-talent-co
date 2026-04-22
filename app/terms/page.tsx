@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { CONTACT_EMAIL, BUSINESS_JURISDICTION, BUSINESS_ENTITY_NAME } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Terms of Service — Noir Talent Co.',
@@ -70,13 +71,13 @@ export default function TermsPage() {
             },
             {
               title: '9. Governing Law',
-              content:
-                'These terms are governed by applicable law. Any disputes will be resolved through appropriate legal channels.',
+              content: BUSINESS_JURISDICTION
+                ? `These terms are governed by the laws of ${BUSINESS_JURISDICTION}, without regard to conflict-of-law principles. Any disputes arising from these terms or from our services will be resolved in the courts of ${BUSINESS_JURISDICTION}.`
+                : `These terms are governed by the laws of the jurisdiction in which ${BUSINESS_ENTITY_NAME} is registered. The specific governing law and dispute-resolution venue will be set out in each individual client agreement.`,
             },
             {
               title: '10. Contact',
-              content:
-                'For questions about these terms, please contact us via our Apply page or through Instagram.',
+              content: `For questions about these terms, please email us at ${CONTACT_EMAIL} or reach out via our Apply page.`,
             },
           ].map((section, i) => (
             <div key={i}>
