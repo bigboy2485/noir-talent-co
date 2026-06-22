@@ -24,7 +24,7 @@ export default function FinalCTA() {
           <em className="text-[#C6A15B] not-italic">with one step.</em>
         </h2>
         <p className="text-[#A1A1A1] text-lg leading-relaxed mb-12 font-light">
-          Apply now or message us directly on Instagram. Applications are reviewed personally and
+          Apply now or reach out directly by email. Applications are reviewed personally and
           spaces are limited.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -34,14 +34,16 @@ export default function FinalCTA() {
           >
             Apply Now
           </Link>
-          <a
-            href={INSTAGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto px-8 py-4 border border-white/20 text-white text-sm tracking-widest uppercase font-light hover:border-[#C6A15B] hover:text-[#C6A15B] transition-all duration-300"
-          >
-            DM on Instagram
-          </a>
+          {INSTAGRAM_URL && (
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-8 py-4 border border-white/20 text-white text-sm tracking-widest uppercase font-light hover:border-[#C6A15B] hover:text-[#C6A15B] transition-all duration-300"
+            >
+              DM on Instagram
+            </a>
+          )}
         </div>
         <p className="mt-8 text-[#A1A1A1] text-xs tracking-[0.2em] uppercase">
           Private · Selective · Strategic

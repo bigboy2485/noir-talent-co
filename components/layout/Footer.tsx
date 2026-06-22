@@ -41,15 +41,17 @@ export default function Footer() {
               sustainable, scalable careers.
             </p>
             <div className="mt-8 flex flex-col gap-3">
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-[#A1A1A1] hover:text-[#C6A15B] text-sm tracking-wide transition-colors duration-200 group w-fit"
-              >
-                <span className="w-8 h-px bg-[#A1A1A1] group-hover:bg-[#C6A15B] transition-colors" />
-                Instagram
-              </a>
+              {INSTAGRAM_URL && (
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#A1A1A1] hover:text-[#C6A15B] text-sm tracking-wide transition-colors duration-200 group w-fit"
+                >
+                  <span className="w-8 h-px bg-[#A1A1A1] group-hover:bg-[#C6A15B] transition-colors" />
+                  Instagram
+                </a>
+              )}
               <a
                 href={CONTACT_EMAIL_HREF}
                 className="flex items-center gap-2 text-[#A1A1A1] hover:text-[#C6A15B] text-sm tracking-wide transition-colors duration-200 group w-fit"

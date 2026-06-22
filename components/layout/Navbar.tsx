@@ -55,14 +55,16 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#A1A1A1] hover:text-[#C6A15B] text-sm tracking-wide transition-colors duration-200"
-            >
-              Instagram
-            </a>
+            {INSTAGRAM_URL && (
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#A1A1A1] hover:text-[#C6A15B] text-sm tracking-wide transition-colors duration-200"
+              >
+                Instagram
+              </a>
+            )}
             <Link
               href="/apply"
               className="px-5 py-2.5 border border-[#C6A15B] text-[#C6A15B] text-sm tracking-widest uppercase hover:bg-[#C6A15B] hover:text-black transition-all duration-300"
@@ -100,14 +102,16 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="pt-4 border-t border-white/5 flex flex-col gap-4">
-            <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#A1A1A1] hover:text-[#C6A15B] text-sm tracking-wide transition-colors"
-            >
-              Instagram
-            </a>
+            {INSTAGRAM_URL && (
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#A1A1A1] hover:text-[#C6A15B] text-sm tracking-wide transition-colors"
+              >
+                Instagram
+              </a>
+            )}
             <Link
               href="/apply"
               onClick={() => setMenuOpen(false)}

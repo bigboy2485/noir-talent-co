@@ -46,14 +46,16 @@ export default function Hero() {
           >
             Apply Now
           </Link>
-          <a
-            href={INSTAGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto px-8 py-4 border border-white/20 text-white text-sm tracking-widest uppercase font-light hover:border-[#C6A15B] hover:text-[#C6A15B] transition-all duration-300"
-          >
-            DM on Instagram
-          </a>
+          {INSTAGRAM_URL && (
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-8 py-4 border border-white/20 text-white text-sm tracking-widest uppercase font-light hover:border-[#C6A15B] hover:text-[#C6A15B] transition-all duration-300"
+            >
+              DM on Instagram
+            </a>
+          )}
         </div>
 
         <div className="mt-20 flex flex-col items-center gap-2 opacity-40">

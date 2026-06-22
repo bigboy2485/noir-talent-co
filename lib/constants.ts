@@ -10,8 +10,10 @@ export const BRAND_NAME = 'Noir Talent Co.'
 export const BRAND_TAGLINE = 'Private Creator Management'
 
 // Social
-export const INSTAGRAM_HANDLE = 'noirtalentco'
-export const INSTAGRAM_URL = `https://www.instagram.com/${INSTAGRAM_HANDLE}/`
+export const INSTAGRAM_HANDLE = '' // TODO: create @noirtalentco account — not live yet; set handle once live
+export const INSTAGRAM_URL = INSTAGRAM_HANDLE
+  ? `https://www.instagram.com/${INSTAGRAM_HANDLE}/`
+  : ''
 
 export const TIKTOK_HANDLE = '' // TODO: add once account is live
 export const TIKTOK_URL = TIKTOK_HANDLE
@@ -24,7 +26,7 @@ export const CONTACT_EMAIL_HREF = `mailto:${CONTACT_EMAIL}`
 export const RESPONSE_WINDOW = '48–72 hours'
 
 // Legal
-export const BUSINESS_JURISDICTION = '' // TODO: e.g. 'England and Wales', 'State of Delaware, USA', 'New South Wales, Australia'
+export const BUSINESS_JURISDICTION = 'Queensland, Australia'
 export const BUSINESS_ENTITY_NAME = BRAND_NAME // TODO: replace with full registered entity name once incorporated
 
 // Formspree

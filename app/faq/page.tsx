@@ -15,7 +15,7 @@ const faqs = [
       },
       {
         q: 'How does the revenue share work?',
-        a: "Our share is a percentage of your net OnlyFans earnings — calculated after the platform\u2019s own 20% fee is deducted. The exact rate depends on your tier and is locked in your contract, so there are never surprise changes. Founding cohort creators receive a reduced rate, held for the duration of the partnership.",
+        a: "Our share is a percentage of your gross OnlyFans earnings, agreed up front and locked in your contract — no surprise changes. Founding-cohort creators receive a reduced rate, held for the life of the partnership.",
       },
       {
         q: 'Are there any hidden fees?',
@@ -184,14 +184,16 @@ export default function FAQPage() {
               >
                 Apply Now
               </Link>
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-6 py-3 border border-white/10 text-[#A1A1A1] text-sm tracking-widest uppercase hover:border-white hover:text-white transition-all duration-300"
-              >
-                DM on Instagram
-              </a>
+              {INSTAGRAM_URL && (
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-6 py-3 border border-white/10 text-[#A1A1A1] text-sm tracking-widest uppercase hover:border-white hover:text-white transition-all duration-300"
+                >
+                  DM on Instagram
+                </a>
+              )}
               <a
                 href={CONTACT_EMAIL_HREF}
                 className="w-full sm:w-auto px-6 py-3 border border-white/10 text-[#A1A1A1] text-sm tracking-widest uppercase hover:border-white hover:text-white transition-all duration-300"

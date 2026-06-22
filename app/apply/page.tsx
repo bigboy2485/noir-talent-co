@@ -72,14 +72,12 @@ export default function ApplyPage() {
                 personally. You can expect to hear from us within {RESPONSE_WINDOW}.
               </p>
               <p className="text-[#A1A1A1] text-sm">
-                In the meantime, feel free to{' '}
+                In the meantime, you can reach us directly at{' '}
                 <a
-                  href={INSTAGRAM_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={CONTACT_EMAIL_HREF}
                   className="text-[#C6A15B] hover:underline"
                 >
-                  follow us on Instagram
+                  {CONTACT_EMAIL}
                 </a>
                 .
               </p>
@@ -244,15 +242,17 @@ export default function ApplyPage() {
             <div className="mt-12 pt-12 border-t border-white/5 text-center">
               <p className="text-[#A1A1A1] text-sm mb-6">Prefer to reach out directly?</p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a
-                  href={INSTAGRAM_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 text-[#C6A15B] text-sm tracking-widest uppercase group"
-                >
-                  DM on Instagram
-                  <span className="block w-8 h-px bg-[#C6A15B] group-hover:w-12 transition-all duration-300" />
-                </a>
+                {INSTAGRAM_URL && (
+                  <a
+                    href={INSTAGRAM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 text-[#C6A15B] text-sm tracking-widest uppercase group"
+                  >
+                    DM on Instagram
+                    <span className="block w-8 h-px bg-[#C6A15B] group-hover:w-12 transition-all duration-300" />
+                  </a>
+                )}
                 <a
                   href={CONTACT_EMAIL_HREF}
                   className="inline-flex items-center gap-3 text-[#C6A15B] text-sm tracking-widest uppercase group"
