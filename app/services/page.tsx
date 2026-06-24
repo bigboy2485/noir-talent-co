@@ -38,15 +38,15 @@ const services = [
   },
   {
     number: '03',
-    title: 'Content Direction',
+    title: 'Content Direction & Production',
     subtitle: 'Structure behind the creativity.',
     description:
-      'A content calendar that works with your schedule, not against it. We build a strategic content framework that keeps your audience engaged, your posting consistent, and your brand identity strong.',
+      'A content calendar that works with your schedule, not against it — and the production to fill it. We direct and shoot professional filming and photography for you, included at no additional cost. The content we produce is yours to keep.',
     points: [
+      'Professional filming & photography — produced for you, included at no extra cost',
       'Monthly content calendars',
       'Content category framework',
       'Posting schedule optimisation',
-      'Batch content strategy',
       'Performance review and iteration',
     ],
   },
