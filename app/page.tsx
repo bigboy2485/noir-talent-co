@@ -4,6 +4,7 @@ import AboutPreview from '@/components/sections/AboutPreview'
 import CaseStudiesPreview from '@/components/sections/CaseStudiesPreview'
 import FAQPreview from '@/components/sections/FAQPreview'
 import FinalCTA from '@/components/sections/FinalCTA'
+import Reveal from '@/components/ui/Reveal'
 
 // Homepage section order mirrors a mature agency-site flow:
 //   Hero -> Services grid -> About strip -> Case studies preview -> FAQ -> Final CTA
@@ -17,11 +18,11 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <WhatWeDo />
-      <AboutPreview />
-      <CaseStudiesPreview />
-      <FAQPreview />
-      <FinalCTA />
+      <Reveal><WhatWeDo /></Reveal>
+      <Reveal><AboutPreview /></Reveal>
+      <Reveal><CaseStudiesPreview /></Reveal>
+      <Reveal><FAQPreview /></Reveal>
+      <Reveal><FinalCTA /></Reveal>
     </>
   )
 }

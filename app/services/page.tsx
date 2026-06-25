@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FinalCTA from '@/components/sections/FinalCTA'
+import Reveal from '@/components/ui/Reveal'
 
 export const metadata: Metadata = {
   title: 'Services — Noir Talent Co.',
@@ -136,8 +137,9 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col gap-px bg-white/5">
             {services.map((service, i) => (
-              <div
+              <Reveal
                 key={i}
+                delay={i * 0.05}
                 className="bg-[#0A0A0A] hover:bg-[#121212] transition-colors duration-300"
               >
                 <div className="p-8 lg:p-12 grid lg:grid-cols-2 gap-10 lg:gap-16">
@@ -176,7 +178,7 @@ export default function ServicesPage() {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>

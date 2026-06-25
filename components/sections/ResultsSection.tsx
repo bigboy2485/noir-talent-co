@@ -35,7 +35,7 @@ export default function ResultsSection() {
           {commitments.map((c, i) => (
             <div
               key={i}
-              className="bg-[#0A0A0A] border border-white/5 p-8 lg:p-10 flex flex-col gap-6 hover:border-[#C6A15B]/20 transition-colors duration-300"
+              className="card-lift bg-[#0A0A0A] border border-white/5 p-8 lg:p-10 flex flex-col gap-6 hover:border-[#C6A15B]/40"
             >
               <span
                 className="text-[#C6A15B] text-xs tracking-[0.3em] uppercase font-light"
