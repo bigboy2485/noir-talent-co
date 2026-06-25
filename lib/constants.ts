@@ -10,7 +10,7 @@ export const BRAND_NAME = 'Noir Talent Co.'
 export const BRAND_TAGLINE = 'Private Creator Management'
 
 // Social
-export const INSTAGRAM_HANDLE = '' // TODO: create @noirtalentco account — not live yet; set handle once live
+export const INSTAGRAM_HANDLE = 'noirtalentco' // live 2026-06-25
 export const INSTAGRAM_URL = INSTAGRAM_HANDLE
   ? `https://www.instagram.com/${INSTAGRAM_HANDLE}/`
   : ''
