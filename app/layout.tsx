@@ -4,6 +4,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://noirtalentco.com'),
   title: 'Noir Talent Co. — Creator Management Agency',
   description:
     'Private creator management agency. Strategic management for creators who want structure, growth, and real results.',
@@ -12,6 +13,13 @@ export const metadata: Metadata = {
     title: 'Noir Talent Co.',
     description: 'Built for creators ready to scale.',
     type: 'website',
+    url: 'https://noirtalentco.com',
+    siteName: 'Noir Talent Co.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Noir Talent Co.',
+    description: 'Built for creators ready to scale.',
   },
 }
 
